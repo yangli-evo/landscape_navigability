@@ -18,14 +18,14 @@ Where:
 - E<sub>AB</sub> is the fitness value of the genotype with both alleles.
 - E<sub>aB</sub>, E<sub>Ab</sub>, and E<sub>ab</sub> represent the fitness values of the other genotypes formed by different allele combinations.
 
-The program computes this value for all combinations of genetic variants and classifies the interactions based on the significance of $ \epsilon $.
+The program computes this value for all combinations of genetic variants and classifies the interactions based on the significance of `ε`.
 
 ## **Installation**
 
 ### **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/epistasis-analysis.git
+git clone https://github.com/your-username/epistasis.git
 cd epistasis-analysis
 
 ## Features
