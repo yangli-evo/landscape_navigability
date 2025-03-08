@@ -15,7 +15,7 @@ $$
 $$
 
 Where:
-- $ E_{AB} $ is the fitness value of the genotype with both alleles.
+- $$ E_{AB} $$ is the fitness value of the genotype with both alleles.
 - $ E_{aB} $, $ E_{Ab} $, and $ E_{ab} $ represent the fitness values of the other genotypes formed by different allele combinations.
 
 The program computes this value for all combinations of genetic variants and classifies the interactions based on the significance of $ \epsilon $.
