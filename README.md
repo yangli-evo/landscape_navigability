@@ -25,7 +25,7 @@ The program computes this value for all combinations of genetic variants and cla
 ### **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/epistasis.git
+git clone https://github.com/yangli-evo/epistasis.git
 cd epistasis-analysis
 
 ## Features
