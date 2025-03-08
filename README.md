@@ -8,7 +8,7 @@ Epistasis refers to the interaction between different genetic loci that influenc
 
 ### **Epistasis Calculation Formula**
 
-The epistasis value \epsilon is calculated using the following formula:
+The epistasis value $$ \epsilon is calculated using the following formula:
 
 $$
 \epsilon = E_{AB} - E_{aB} - E_{Ab} + E_{ab}
