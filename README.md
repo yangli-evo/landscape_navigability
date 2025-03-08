@@ -8,17 +8,17 @@ Epistasis refers to the interaction between different genetic loci that influenc
 
 ### **Epistasis Calculation Formula**
 
-The epistasis value \( \epsilon \) is calculated using the following formula:
+The epistasis value $ \epsilon $ is calculated using the following formula:
 
-\[
+$$
 \epsilon = E_{AB} - E_{aB} - E_{Ab} + E_{ab}
-\]
+$$
 
 Where:
-- \( E_{AB} \) is the fitness value of the genotype with both alleles.
-- \( E_{aB} \), \( E_{Ab} \), and \( E_{ab} \) represent the fitness values of the other genotypes formed by different allele combinations.
+- $ E_{AB} $ is the fitness value of the genotype with both alleles.
+- $ E_{aB} $, $ E_{Ab} $, and $ E_{ab} $ represent the fitness values of the other genotypes formed by different allele combinations.
 
-The program computes this value for all combinations of genetic variants and classifies the interactions based on the significance of \( \epsilon \).
+The program computes this value for all combinations of genetic variants and classifies the interactions based on the significance of $ \epsilon $.
 
 ## **Installation**
 
