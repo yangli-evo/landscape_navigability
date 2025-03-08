@@ -27,7 +27,7 @@ The program computes this value for all combinations of genetic variants and cla
 ```bash
 git clone https://github.com/yangli-evo/epistasis.git
 cd epistasis-analysis
-
+```
 ## Features
 - Computes **epistasis values (E)** from genetic interaction data.
 - Classifies interactions into **RSE, SSE, PE, or NE** based on statistical criteria.
@@ -39,4 +39,4 @@ Make sure you have Python 3 installed along with the required libraries:
 
 ```bash
 pip install pandas numpy scipy
-
+```
