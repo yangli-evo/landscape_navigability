@@ -1,6 +1,32 @@
 # Epistasis
 
-This repository contains a Python script for classifying different types of epistasis based on genetic interaction data. It computes **epistasis values (E)** and categorizes interactions into **Reciprocal Sign Epistasis (RSE)**, **Simple Sign Epistasis (SSE)**, **Positive Epistasis (PE)**, or **Negative Epistasis (NE)**.
+This repository contains code for analyzing and classifying **epistasis** between genetic interactions based on fitness data. It computes the epistasis value `ε` and classifies the type of epistasis based on the results.
+
+## **Overview**
+
+Epistasis refers to the interaction between different genetic loci that influence an organism's fitness. The goal of this project is to analyze genetic interactions and classify them into different categories such as **Reciprocal Sign Epistasis (RSE)**, **Simple Sign Epistasis (SSE)**, **Positive Epistasis (PE)**, and **Negative Epistasis (NE)**.
+
+### **Epistasis Calculation Formula**
+
+The epistasis value \( \epsilon \) is calculated using the following formula:
+
+\[
+\epsilon = E_{AB} - E_{aB} - E_{Ab} + E_{ab}
+\]
+
+Where:
+- \( E_{AB} \) is the fitness value of the genotype with both alleles.
+- \( E_{aB} \), \( E_{Ab} \), and \( E_{ab} \) represent the fitness values of the other genotypes formed by different allele combinations.
+
+The program computes this value for all combinations of genetic variants and classifies the interactions based on the significance of \( \epsilon \).
+
+## **Installation**
+
+### **Clone the repository**
+
+```bash
+git clone https://github.com/your-username/epistasis-analysis.git
+cd epistasis-analysis
 
 ## Features
 - Computes **epistasis values (E)** from genetic interaction data.
