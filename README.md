@@ -1,5 +1,4 @@
 # Landscape Navigability using Gene Expression Levels  
-## Overview  
 This repository contains code and analysis for exploring **fitness landscape navigability** using **gene expression levels**. The project aims to assess how gene expression variations influence movement across fitness landscapes and the accessibility of high-fitness regions.
 
 ### Global Optimal Navigability
