@@ -5,12 +5,12 @@ This repository contains code and analysis for exploring **fitness landscape nav
 ## Repository Structure
 landscape-navigability/ │── data/ # Raw & processed gene expression data │── scripts/ # Analysis scripts │ ├── preprocess.R # Data preprocessing │ ├── analysis.R # Main analysis │ ├── visualization.R # Plotting results │── results/ # Output results │── README.md # Overview of the project │── requirements.txt # Dependencies (if using Python) │── .gitignore # Ignore unnecessary files
 
-# Global Optimal Navigability
+## Global Optimal Navigability
 - **Preprocessing:** Normalization and filtering of gene expression levels.  
 - **Fitness Landscape Modeling:** Constructing landscapes based on expression levels and fitness values.  
 - **Navigability Analysis:** Assessing pathway accessibility between fitness peaks. 
 
-# Epistasis
+## Epistasis
 
 This repository also contains code for analyzing and classifying **epistasis** between genetic interactions based on fitness data. It computes the epistasis value `ε` and classifies the type of epistasis based on the results.
 
