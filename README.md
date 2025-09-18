@@ -13,41 +13,21 @@ Key scientific questions:
 - What role does **epistasis** play in shaping accessibility to global optima?  
 - How do empirical landscapes compare to **maximally rugged landscapes** and **cis-regulatory (TF binding affinity) landscapes**?
 
-## 🔄 Workflow
-### ASCII flowchart
-            +---------------------+
-            |   Expression Data   |
-            | (WT + 15 mutants)   |
-            +----------+----------+
-                       |
-                       v
-            +---------------------+
-            |  Landscape          |
-            |  Construction       |
-            +----------+----------+
-                       |
-         +-------------+-------------+
-         |                           |
-         v                           v
 
-+---------------------+ +----------------------+
-| Navigability | | Epistasis Analysis |
-| (adaptive walks, | | (ε calculation, |
-| open-path fraction) | | RSE / SSE / ME) |
-+---------------------+ +----------------------+
+### Mermaid flowchart (if supported by GitHub)  
+```mermaid
+flowchart TD
+    A[Expression Data<br>(WT + 15 mutants)] --> B[Landscape Construction]
+    B --> C[Navigability<br>(adaptive walks, open paths)]
+    B --> D[Epistasis Analysis<br>(ε calculation, RSE / SSE / ME)]
 
 ### Global Optimal Navigability
 - **Preprocessing:** Normalization and filtering of gene expression levels.  
 - **Fitness Landscape Modeling:** Constructing landscapes based on expression levels and fitness values.  
 - **Navigability Analysis:** Assessing pathway accessibility between fitness peaks. 
 
-
-
-
 ### Epistasis
-
 This repository also contains code for analyzing and classifying **epistasis** between genetic interactions based on fitness data. It computes the epistasis value `ε` and classifies the type of epistasis based on the results.
-
 
 Epistasis refers to the interaction between different genetic loci that influence an organism's fitness. The goal of this project is to analyze genetic interactions and classify them into different categories such as **Reciprocal Sign Epistasis (RSE)**, **Simple Sign Epistasis (SSE)**, **Positive Epistasis (PE)**, and **Negative Epistasis (NE)**.
 
