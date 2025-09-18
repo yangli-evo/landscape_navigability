@@ -1,11 +1,11 @@
-# Landscape Navigability using gene expression fitness proxy 
+# Landscape Navigability using gene expression data
 This repository provides code and analysis pipelines for studying **adaptive landscape navigability** and **epistasis** using gene expression levels in yeast.  
 
 > Li, Yang & Zhang, Jianzhi (2025) *Navigability of thousands of adaptive landscapes of RNA and protein expressions by trans-regulatory mutations* 【submitted】  
 
 ## 🌐 Background
 Adaptive (fitness) landscapes describe the mapping between genotypes and phenotypes or fitness.  
-This project focuses on **gene expression landscapes**, using transcriptomic and proteomic data from 16 yeast genotypes (wild type + 15 auxotrophic mutants).  
+This project focuses on **gene expression landscapes**, using transcriptomic and proteomic data from 16 yeast genotypes (wild type + MET15 (ΔM), HIS3 (ΔH), LEU2 (ΔL), URA3 (ΔU), ΔHM, ΔLM, ΔUM, ΔHL, ΔHU, ΔLU, ΔHLM, ΔHUM, ΔLUM, ΔHLU, and ΔHLUM auxotrophic mutants).  
 
 Key scientific questions:  
 - How navigable are gene expression landscapes when altered by **trans-regulatory mutations**?  
@@ -13,8 +13,8 @@ Key scientific questions:
 - What role does **epistasis** play in shaping accessibility to global optima?  
 - How do empirical landscapes compare to **maximally rugged landscapes** and **cis-regulatory (TF binding affinity) landscapes**?
 
-## 🔄 Workflow  
-### ASCII flowchart  
+## 🔄 Workflow
+### ASCII flowchart
             +---------------------+
             |   Expression Data   |
             | (WT + 15 mutants)   |
