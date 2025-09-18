@@ -30,6 +30,12 @@ Key scientific questions:
          |                           |
          v                           v
 
++---------------------+ +----------------------+
+| Navigability | | Epistasis Analysis |
+| (adaptive walks, | | (ε calculation, |
+| open-path fraction) | | RSE / SSE / ME) |
++---------------------+ +----------------------+
+
 ### Global Optimal Navigability
 - **Preprocessing:** Normalization and filtering of gene expression levels.  
 - **Fitness Landscape Modeling:** Constructing landscapes based on expression levels and fitness values.  
