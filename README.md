@@ -14,16 +14,6 @@ Key scientific questions:
 - How do empirical landscapes compare to **maximally rugged landscapes** and **cis-regulatory (TF binding affinity) landscapes**?
 
 
-
-### Mermaid flowchart (if supported by GitHub)  
-
-```mermaid
-flowchart TD
-    A[Expression Data<br>(WT + 15 mutants)] --> B[Landscape Construction]
-    B --> C[Navigability<br>(adaptive walks, open paths)]
-    B --> D[Epistasis Analysis<br>(ε calculation, RSE / SSE / ME)]
-
-
 ### Global Optimal Navigability
 - **Preprocessing:** Normalization and filtering of gene expression levels.  
 - **Fitness Landscape Modeling:** Constructing landscapes based on expression levels and fitness values.  
