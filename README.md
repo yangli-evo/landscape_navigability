@@ -41,21 +41,7 @@ Key scientific questions:
 - **Fitness Landscape Modeling:** Constructing landscapes based on expression levels and fitness values.  
 - **Navigability Analysis:** Assessing pathway accessibility between fitness peaks. 
 
-## Workflow  
-            +---------------------+
-            |   Expression Data   |
-            | (WT + 15 mutants)   |
-            +----------+----------+
-                       |
-                       v
-            +---------------------+
-            |  Landscape          |
-            |  Construction       |
-            +----------+----------+
-                       |
-         +-------------+-------------+
-         |                           |
-         v                           v
+
 
 
 ### Epistasis
@@ -65,7 +51,7 @@ This repository also contains code for analyzing and classifying **epistasis** b
 
 Epistasis refers to the interaction between different genetic loci that influence an organism's fitness. The goal of this project is to analyze genetic interactions and classify them into different categories such as **Reciprocal Sign Epistasis (RSE)**, **Simple Sign Epistasis (SSE)**, **Positive Epistasis (PE)**, and **Negative Epistasis (NE)**.
 
-### **Epistasis Calculation Formula**
+### **🧮 Epistasis Calculation**
 
 The epistasis value `ε` is calculated using the following formula:
 
