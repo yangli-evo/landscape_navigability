@@ -6,16 +6,21 @@ This repository contains code and analysis for exploring **fitness landscape nav
 - **Fitness Landscape Modeling:** Constructing landscapes based on expression levels and fitness values.  
 - **Navigability Analysis:** Assessing pathway accessibility between fitness peaks. 
 
-Expression Data (WT + mutants)
-              |
-              v
-   Landscape Construction
-              |
-      +-------+--------+
-      |                |
-      v                v
-Navigability      Epistasis
- (open paths)     (ε, RSE/SSE/ME)
+            +---------------------+
+            |   Expression Data   |
+            | (WT + 15 mutants)   |
+            +----------+----------+
+                       |
+                       v
+            +---------------------+
+            |  Landscape          |
+            |  Construction       |
+            +----------+----------+
+                       |
+         +-------------+-------------+
+         |                           |
+         v                           v
+
 
 ### Epistasis
 
