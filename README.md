@@ -1,5 +1,19 @@
-# Landscape Navigability using Gene Expression Levels  
-This repository contains code and analysis for exploring **fitness landscape navigability** using **gene expression levels**. The project aims to assess how gene expression variations influence movement across fitness landscapes and the accessibility of high-fitness regions.
+# Landscape Navigability using gene expression fitness proxy 
+This repository provides code and analysis pipelines for studying **adaptive landscape navigability** and **epistasis** using gene expression levels in yeast.  
+It is based on the study:  
+
+> Li, Yang & Zhang, Jianzhi (2025) *Navigability of thousands of adaptive landscapes of RNA and protein expressions by trans-regulatory mutations* 【submitted】  
+
+## 🌐 Background
+Adaptive (fitness) landscapes describe the mapping between genotypes and phenotypes or fitness.  
+This project focuses on **gene expression landscapes**, using transcriptomic and proteomic data from 16 yeast genotypes (wild type + 15 auxotrophic mutants).  
+
+Key scientific questions:  
+- How navigable are gene expression landscapes when altered by **trans-regulatory mutations**?  
+- How does navigability differ between **mRNA** and **protein** expression landscapes?  
+- What role does **epistasis** play in shaping accessibility to global optima?  
+- How do empirical landscapes compare to **maximally rugged landscapes** and **cis-regulatory (TF binding affinity) landscapes**?
+
 
 ### Global Optimal Navigability
 - **Preprocessing:** Normalization and filtering of gene expression levels.  
