@@ -22,6 +22,7 @@ Key scientific questions:
 - **Landscape constructio**n from transcriptomic & proteomic data.
 - Navigability analysis: compute fraction of open paths to global peaks under multiple statistical criteria.
 - Epistasis detection: compute ε with error propagation, test significance, and classify as: **Reciprocal Sign Epistasis (RSE)**, **Simple Sign Epistasis (SSE)**, **Positive Epistasis (PE)**, and **Negative Epistasis (NE)**.
+  
 ### Comparison modules:
 - Empirical vs. maximally rugged landscapes
 - mRNA vs. protein landscapes (buffering effect)
@@ -39,6 +40,7 @@ Where:
 - E<sub>AB</sub> is the fitness value of the genotype with both alleles.
 - E<sub>aB</sub> and E<sub>Ab</sub> represent the fitness values of the other genotypes formed by different allele combinations.
 - E<sub>ab</sub> is the fitness value of widetype genotype.
+  
 $$ 
 The standard error (SE) of ε is propagated from replicate variance.
 A z-score is computed and significance is tested at P < 0.05.
