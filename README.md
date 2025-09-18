@@ -13,11 +13,18 @@ Key scientific questions:
 - What role does **epistasis** play in shaping accessibility to global optima?  
 - How do empirical landscapes compare to **maximally rugged landscapes** and **cis-regulatory (TF binding affinity) landscapes**?
 
-
 ### Global Optimal Navigability
 - **Preprocessing:** Normalization and filtering of gene expression levels.  
 - **Fitness Landscape Modeling:** Constructing landscapes based on expression levels and fitness values.  
 - **Navigability Analysis:** Assessing pathway accessibility between fitness peaks. 
+
+## 📊 Features
+- **Landscape constructio**n from transcriptomic & proteomic data.
+- Navigability analysis: compute fraction of open paths to global peaks under multiple statistical criteria.
+- Epistasis detection: compute ε with error propagation, test significance, and classify as:
+--Reciprocal Sign Epistasis (RSE)
+--Single Sign Epistasis (SSE)
+--Magnitude Epistasis (ME)
 
 ### Epistasis
 This repository also contains code for analyzing and classifying **epistasis** between genetic interactions based on fitness data. It computes the epistasis value `ε` and classifies the type of epistasis based on the results.
