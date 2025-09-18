@@ -1,1 +1,1 @@
-from .utils import compute_E_replicates, classify_epistasis, perform_statistical_test
+from .utils import classify_epistasis, classify_epistasis_P_N, get_P, get_cv
