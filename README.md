@@ -1,6 +1,5 @@
 # Landscape Navigability using gene expression fitness proxy 
 This repository provides code and analysis pipelines for studying **adaptive landscape navigability** and **epistasis** using gene expression levels in yeast.  
-It is based on the study:  
 
 > Li, Yang & Zhang, Jianzhi (2025) *Navigability of thousands of adaptive landscapes of RNA and protein expressions by trans-regulatory mutations* 【submitted】  
 
