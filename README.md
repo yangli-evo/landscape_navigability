@@ -41,7 +41,6 @@ Where:
 - E<sub>aB</sub> and E<sub>Ab</sub> represent the fitness values of the other genotypes formed by different allele combinations.
 - E<sub>ab</sub> is the fitness value of widetype genotype.
   
-
 The standard error (SE) of ε is propagated from replicate variance.
 A z-score is computed and significance is tested at P < 0.05.
 
