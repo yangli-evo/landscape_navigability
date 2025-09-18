@@ -53,7 +53,7 @@ The program computes this value for all combinations of genetic variants and cla
 
 ```bash
 git clone https://github.com/yangli-evo/landscape_navigability.git
-cd landscape_navigability
+cd src
 ```
 ## Features
 - Computes **epistasis values (E)** from genetic interaction data.
