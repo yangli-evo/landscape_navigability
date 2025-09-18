@@ -20,6 +20,7 @@ flowchart TD
     A[Expression Data<br>(WT + 15 mutants)] --> B[Landscape Construction]
     B --> C[Navigability<br>(adaptive walks, open paths)]
     B --> D[Epistasis Analysis<br>(ε calculation, RSE / SSE / ME)]
+```
 
 ### Global Optimal Navigability
 - **Preprocessing:** Normalization and filtering of gene expression levels.  
