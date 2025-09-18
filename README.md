@@ -13,6 +13,22 @@ Key scientific questions:
 - What role does **epistasis** play in shaping accessibility to global optima?  
 - How do empirical landscapes compare to **maximally rugged landscapes** and **cis-regulatory (TF binding affinity) landscapes**?
 
+## 🔄 Workflow  
+### ASCII flowchart  
+            +---------------------+
+            |   Expression Data   |
+            | (WT + 15 mutants)   |
+            +----------+----------+
+                       |
+                       v
+            +---------------------+
+            |  Landscape          |
+            |  Construction       |
+            +----------+----------+
+                       |
+         +-------------+-------------+
+         |                           |
+         v                           v
 
 ### Global Optimal Navigability
 - **Preprocessing:** Normalization and filtering of gene expression levels.  
