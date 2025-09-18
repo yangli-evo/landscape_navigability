@@ -21,10 +21,12 @@ Key scientific questions:
 ## 📊 Features
 - **Landscape constructio**n from transcriptomic & proteomic data.
 - Navigability analysis: compute fraction of open paths to global peaks under multiple statistical criteria.
-- Epistasis detection: compute ε with error propagation, test significance, and classify as:
---Reciprocal Sign Epistasis (RSE)
---Single Sign Epistasis (SSE)
---Magnitude Epistasis (ME)
+- Epistasis detection: compute ε with error propagation, test significance, and classify as: **Reciprocal Sign Epistasis (RSE)**, **Simple Sign Epistasis (SSE)**, **Positive Epistasis (PE)**, and **Negative Epistasis (NE)**.
+### Comparison modules:
+- Empirical vs. maximally rugged landscapes
+- mRNA vs. protein landscapes (buffering effect)
+- Trans- vs. cis-regulatory landscapes (TF binding affinity data)
+
 
 ### Epistasis
 This repository also contains code for analyzing and classifying **epistasis** between genetic interactions based on fitness data. It computes the epistasis value `ε` and classifies the type of epistasis based on the results.
