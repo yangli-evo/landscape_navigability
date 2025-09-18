@@ -1,174 +1,50 @@
 # Landscape Navigability using Gene Expression Levels  
+This repository contains code and analysis for exploring **fitness landscape navigability** using **gene expression levels**. The project aims to assess how gene expression variations influence movement across fitness landscapes and the accessibility of high-fitness regions.
 
-This repository contains code and analysis for exploring **fitness landscape navigability** using **gene expression levels**. The project aims to assess how gene expression variations influence the accessibility of high-fitness regions and the role of genetic interactions in shaping adaptive pathways.  
+### Global Optimal Navigability
+- **Preprocessing:** Normalization and filtering of gene expression levels.  
+- **Fitness Landscape Modeling:** Constructing landscapes based on expression levels and fitness values.  
+- **Navigability Analysis:** Assessing pathway accessibility between fitness peaks. 
 
----
+### Epistasis
 
-## Workflow  
+This repository also contains code for analyzing and classifying **epistasis** between genetic interactions based on fitness data. It computes the epistasis value `ε` and classifies the type of epistasis based on the results.
 
-### ASCII version
-            +---------------------+
-            |   Expression Data   |
-            | (WT + 15 mutants)   |
-            +----------+----------+
-                       |
-                       v
-            +---------------------+
-            |  Landscape          |
-            |  Construction       |
-            +----------+----------+
-                       |
-         +-------------+-------------+
-         |                           |
-         v                           v
 
-+---------------------+ +----------------------+
-| Navigability | | Epistasis Analysis |
-| (adaptive walks, | | (ε calculation, |
-| open-path fraction) | | RSE / SSE / ME) |
-+---------------------+ +----------------------+
+Epistasis refers to the interaction between different genetic loci that influence an organism's fitness. The goal of this project is to analyze genetic interactions and classify them into different categories such as **Reciprocal Sign Epistasis (RSE)**, **Simple Sign Epistasis (SSE)**, **Positive Epistasis (PE)**, and **Negative Epistasis (NE)**.
 
-### Mermaid version (more visual)
+### **Epistasis Calculation Formula**
 
-```mermaid
-flowchart TD
-    A[Expression Data (WT + 15 mutants)] --> B[Landscape Construction]
-    B --> C[Navigability<br>(adaptive walks, open paths)]
-    B --> D[Epistasis Analysis<br>(ε calculation, RSE / SSE / ME)]
-Global Optimal Navigability
+The epistasis value `ε` is calculated using the following formula:
 
-Preprocessing: Normalization and filtering of gene expression levels.
+$$
+\epsilon = E_{AB} - E_{aB} - E_{Ab} + E_{ab}
+$$
 
-Fitness Landscape Modeling: Constructing landscapes based on expression levels of 16 yeast genotypes (WT and 15 auxotrophic mutants).
+Where:
+- E<sub>AB</sub> is the fitness value of the genotype with both alleles.
+- E<sub>aB</sub> and E<sub>Ab</sub> represent the fitness values of the other genotypes formed by different allele combinations.
+- E<sub>ab</sub> is the fitness value of widetype genotype.
 
-Navigability Analysis: Assessing pathway accessibility between genotypes and the global peak by adaptive walks, under multiple statistical criteria for defining expression reduction.
+The program computes this value for all combinations of genetic variants and classifies the interactions based on the significance of `ε`.
 
-Epistasis
+## **Installation**
 
-This repository also provides code for quantifying and classifying epistasis among genetic interactions based on gene expression data.
+### **Clone the repository**
 
-Epistasis refers to non-additive interactions between mutations that alter expression relative to expectations under a multiplicative model. The code computes the epistasis value (ε) with propagated measurement error, performs statistical tests, and classifies the interaction type.
-
-Epistasis Calculation
-
-Epistasis between two mutations (A and B) is defined as:
-
-𝜀
-𝐴
-𝐵
-=
-ln
-⁡
-𝐸
-𝐴
-𝐵
-+
-ln
-⁡
-𝐸
-𝑎
-𝑏
-−
-ln
-⁡
-𝐸
-𝐴
-𝑏
-−
-ln
-⁡
-𝐸
-𝑎
-𝐵
-,
-ε
-AB
-	​
-
-=lnE
-AB
-	​
-
-+lnE
-ab
-	​
-
-−lnE
-Ab
-	​
-
-−lnE
-aB
-	​
-
-,
-
-where:
-
-𝐸
-𝑎
-𝑏
-E
-ab
-	​
-
-: expression level of the wild type,
-
-𝐸
-𝐴
-𝑏
-E
-Ab
-	​
-
-, 
-𝐸
-𝑎
-𝐵
-E
-aB
-	​
-
-: expression levels of the two single mutants,
-
-𝐸
-𝐴
-𝐵
-E
-AB
-	​
-
-: expression level of the double mutant.
-
-The standard error (SE) of 
-𝜀
-𝐴
-𝐵
-ε
-AB
-	​
-
- is estimated by error propagation across biological replicates, and significance is determined using a z-test (P < 0.05).
-
-Epistasis Classification
-
-Reciprocal Sign Epistasis (RSE): both inequalities satisfied, indicating strong reciprocal reversal of mutational effects.
-
-Single Sign Epistasis (SSE): only one inequality satisfied, indicating partial reversal.
-
-Magnitude Epistasis (ME): significant ε but without sign reversal.
-
-Features
-
-Computes epistasis values (ε) with error propagation.
-
-Classifies significant interactions into RSE, SSE, or ME.
-
-Evaluates landscape navigability by open-path fractions.
-
-Handles replicate gene expression data and applies multiple statistical criteria for robustness.
-
-Installation
-Clone the repository
+```bash
 git clone https://github.com/yangli-evo/landscape_navigability.git
 cd landscape_navigability
+```
+## Features
+- Computes **epistasis values (E)** from genetic interaction data.
+- Classifies interactions into **RSE, SSE, PE, or NE** based on statistical criteria.
+- Handles **replicate data** and **statistical significance testing**.
+
+## Installation
+### Prerequisites
+Make sure you have Python 3 installed along with the required libraries:
+
+```bash
+pip install pandas numpy scipy
+```
