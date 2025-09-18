@@ -5,7 +5,7 @@ This repository provides code and analysis pipelines for studying **adaptive lan
 
 ## 🌐 Background
 Adaptive (fitness) landscapes describe the mapping between genotypes and phenotypes or fitness.  
-This project focuses on **gene expression landscapes**, using transcriptomic and proteomic data from 16 yeast genotypes (wild type + MET15 (ΔM), HIS3 (ΔH), LEU2 (ΔL), URA3 (ΔU), ΔHM, ΔLM, ΔUM, ΔHL, ΔHU, ΔLU, ΔHLM, ΔHUM, ΔLUM, ΔHLU, and ΔHLUM auxotrophic mutants).  
+This project focuses on **gene expression landscapes**, using transcriptomic and proteomic data from 16 yeast genotypes MET15 (ΔM), HIS3 (ΔH), LEU2 (ΔL), URA3 (ΔU), and their combinations (ΔHM, ΔLM, ΔUM, ΔHL, ΔHU, ΔLU, ΔHLM, ΔHUM, ΔLUM, ΔHLU, and ΔHLUM).
 
 Key scientific questions:  
 - How navigable are gene expression landscapes when altered by **trans-regulatory mutations**?  
