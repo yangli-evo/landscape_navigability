@@ -27,12 +27,6 @@ Key scientific questions:
 - mRNA vs. protein landscapes (buffering effect)
 - Trans- vs. cis-regulatory landscapes (TF binding affinity data)
 
-
-### Epistasis
-This repository also contains code for analyzing and classifying **epistasis** between genetic interactions based on fitness data. It computes the epistasis value `ε` and classifies the type of epistasis based on the results.
-
-Epistasis refers to the interaction between different genetic loci that influence an organism's fitness. The goal of this project is to analyze genetic interactions and classify them into different categories such as **Reciprocal Sign Epistasis (RSE)**, **Simple Sign Epistasis (SSE)**, **Positive Epistasis (PE)**, and **Negative Epistasis (NE)**.
-
 ### **🧮 Epistasis Calculation**
 
 The epistasis value `ε` is calculated using the following formula:
@@ -45,6 +39,8 @@ Where:
 - E<sub>AB</sub> is the fitness value of the genotype with both alleles.
 - E<sub>aB</sub> and E<sub>Ab</sub> represent the fitness values of the other genotypes formed by different allele combinations.
 - E<sub>ab</sub> is the fitness value of widetype genotype.
+The standard error (SE) of ε is propagated from replicate variance.
+A z-score is computed and significance is tested at P < 0.05.
 
 The program computes this value for all combinations of genetic variants and classifies the interactions based on the significance of `ε`.
 
